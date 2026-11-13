@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper]{article}
+\input{preambulo}
+% Opcionales:  \sinnumeros   \seccionesenpaginanueva
+
+\title{\vspace{-1.5cm}\textbf{Título del informe}\\[3pt]
+\large Subtítulo}
+\author{\normalsize Autor --- Institución --- 2026}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-1cm}
+\notafuentes{\textbf{AIMA}: Russell \& Norvig, \textit{Artificial Intelligence: A Modern Approach}, 3.ª ed. (2010).}
+
+\indice
+
+\section{Introducción}
+
+\begin{recuadro}{Objetivo}
+Qué se pide o qué se busca responder.
+\end{recuadro}
+
+\begin{itemize}
+  \item Primer punto, con su fuente en nota al pie.\fuente{AIMA, §2.1, p.~34}
+  \item Una cita en el idioma original: \cita{An agent is anything that can be viewed as perceiving its environment}.
+  \item Un porcentaje en matemática: $35\%$; un decimal: $0{,}65$.
+\end{itemize}
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}l X X@{}}
+\toprule
+ & \textbf{Opción A} & \textbf{Opción B} \\
+\midrule
+Costo & bajo & alto \\
+Ventaja & simple & flexible \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[flecha/.style={-{Stealth[length=2.2mm]}, thick, draw=azul}]
+  \pic at (0,0) {persona};
+  \pic at (3,0) {compu};
+  \draw[flecha] (0.4,0) -- node[above, font=\scriptsize] {pide} (2.3,0);
+\end{tikzpicture}
+\caption{Pictograma con íconos del preámbulo.}
+\end{figure}
+
+\begin{extras}
+\begin{itemize}
+  \item Información nueva que amplía, pero no hace falta para entender lo de arriba.
+\end{itemize}
+\end{extras}
+
+\section{Conclusión}
+
+\begin{destacado}{Conclusión}
+La idea principal en una o dos líneas.
+\end{destacado}
+
+\begin{aviso}{Supuesto}
+Algo que hubo que suponer porque faltaba un dato.
+\end{aviso}
+
+\end{document}
